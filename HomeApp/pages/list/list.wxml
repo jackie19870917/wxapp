@@ -1,0 +1,13 @@
+<!--pages/list.wxml-->
+
+<view>
+  <navigator url="url" wx:for="{{list}}" wx:key="item">
+    <view class="img_box" style="top:{{item.top}}px;left:{{item.left}}px">
+      <image src="{{item.url}}" mode="widthFix" bindload="loadImage" data-index="{{index}}"></image>
+    </view>
+  </navigator>
+</view>
+
+<view class="loading_box" wx:if="{{pageStatus}}" style="top:{{(leftHeight>rightHeight?leftHeight:rightHeight)-40}}px">
+  <view class="loading_fade_circle"></view>
+</view>

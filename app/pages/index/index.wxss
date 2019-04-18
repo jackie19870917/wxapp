@@ -1,0 +1,34 @@
+/**index.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rpx 0;
+  box-sizing: border-box;
+} 
+.usermotto {
+  margin-top: 20px;
+}
+.searchInput{
+    border: 1px solid #66afe9;
+    padding: 7px 0px;
+    border-radius: 3px;
+    padding-left:9px;
+    width: 230px;
+    margin-bottom: 30px;
+}
+/* 显示列表 */
+.conter{
+  height: 100%;
+  display: flex;
+  flex-direction:column; /* 容器下按钮横向或纵向排列 */
+  align-items:center; /* 容器下按钮的对齐方式 */
+  box-sizing: border-box; /* 不让后面的边框等设置修改 */
+  background-repeat: repeat; /* 图像平铺 */
+  padding: 30rpx; /* 内边距 */
+  border: 1px solid #66afe9;
+  margin: 3px 30px 3px;
+  font-size: 70% 
+}

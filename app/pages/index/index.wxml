@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <input id="key" name="key" type="text" maxlength="10" confirm-type="搜索" class="searchInput"
+    bindconfirm="searchData" placeholder="输入关键字进行搜索" auto-focus />
+    <view class="conter" wx:for="{{tables}}" wx:key="*this" bindtouchend='viewDetail'>
+      {{item}}
+    </view>
+    <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="close">
+      <view> {{modalText}} </view>
+    </modal>
+</view>
